@@ -1,4 +1,4 @@
-Write a programt that can print any size pyramide in frame. Name it - pyramida_printer.
+Write a programt that can print any size pyramide. Name it - pyramida_printer.
 
 Usage example:
 
