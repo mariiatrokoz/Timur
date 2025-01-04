@@ -4,4 +4,5 @@ print("Hello, TIMUR!!<333")
 print("one more")
 
 #execute shell script
-os.system("./to_mariia.sh")
+#os.system("./to_mariia.sh")
+os.system("ls -R -l")
