@@ -19,4 +19,5 @@ names = sys.argv[1:]
 random.shuffle(names)
 
 for pair in zip(names[::2], names[1::2]):
-    print(pair)
+
+	print(pair[0],"-",pair[1])
