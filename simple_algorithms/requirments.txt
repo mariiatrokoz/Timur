@@ -12,3 +12,45 @@
 
 
 *УСІ АЛГОРИТМИ РЕАЛІЗУВАТИ БЕЗ ВИКОРИСТАННЯ ІСНУЮЧИХ ФУНКЦІЙ/МЕТОДІВ aka РУКАМИ*
+
+
+
+приклад файлу simple_algorithms.py:
+.
+
+def calculate_sum(list):
+	...
+	...
+	return sum
+
+
+def find_max(list):
+	...
+	...
+	return max_value
+
+
+def factorial(n):
+	...
+	...
+	return n_factorial
+
+
+def find_index(list, val):
+	...
+	...
+	return index
+
+
+
+print('calc sum:', calculate_sum({12, 555, 0, 23123, 22}))
+
+print('calc sum:', calculate_sum({'adhdas', 'test', '2'}))
+
+...
+
+...
+
+print('index of hello = ', find_index({'welcome', 'mariia', 'timur', 'hello, 'world', 'sun'}, 'hello'))
+
+.
