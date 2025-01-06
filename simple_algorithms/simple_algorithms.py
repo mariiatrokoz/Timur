@@ -40,8 +40,10 @@ def factorial(n):
 
 
 def find_index(list, val):
-    ###
-    return index
+
+	for i in range(len(list)):
+		if list[i] == val:
+			return i
 
 #print(calculate_sum([1,2,3,4]))
 
@@ -49,5 +51,5 @@ def find_index(list, val):
 
 #print(factorial(3))
 
-#print('index of hello = ', find_index(['welcome', 'mariia', 'timur', 'hello',
+print('index of hello = ', find_index(['welcome', 'mariia', 'timur', 'hello',
                                                 'world', 'sun'], 'hello'))
