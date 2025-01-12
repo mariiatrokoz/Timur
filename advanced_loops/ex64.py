@@ -18,9 +18,14 @@ def create_price_table(prices, discount):
 
     price_table = []
 
-    for price in prices:
-        discount = round(price * 0.6, 2)
-        print(f"{price}\t{round(price - discount, 2)}\t{discount}")
+    row = []
+    price = prices[0]
+    row.append(price)
+    row.append(price*discount)
+    row.append(row[0] - row[1]) 
+
+    price_table.append(row)
+
 
     return price_table
 
@@ -30,19 +35,38 @@ def print_prices_with_discount(price_table):
     for price in price_table:
         print(f"{price[0]}\t{round(price[1], 2)}\t{round(price[2], 2)}")
 
-prices = [4.95, 9.95, 14.95, 19.95, 24.95]
 
-price_table = create_price_table(prices, 0.6)
+def main():
+            
+    prices = [4.95, 9.95, 14.95, 19.95, 24.95]
 
-print_prices_with_discount(price_table)
+    price_table = create_price_table(prices, 0.6)
+
+    print_prices_with_discount(price_table)
+
+
+if __name__ == "__main__":
+    main()
 
 
 
 
 '''
-key     price   discount_size
-apple   4.96,   3.12
-water   9.95,   4.30
+key     price_old   discount_size   price_new
+apple   4.96,       3.12            1.84
+water   9.95,       4.30            5.65
 ...
 
+list[0][1]
+
+for element in list:
+    print(element[2])
+
+list[1][0] 
+
+
 '''
+
+
+
+
